@@ -69,7 +69,7 @@ h1 {
   background-color: aliceblue;
   opacity: 60%;
   padding: 1rem;
-  text-overflow: hidden;
+  overflow: hidden;
   z-index: 1;
 
   animation-name: up;
