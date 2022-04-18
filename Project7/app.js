@@ -1,8 +1,6 @@
 /*
 /O functie "getDigits" care primeste un sir de caractere si returneaza cifrele din sirul respectiv
 */
-let i;
-let j;
 
 function getDigits(characters) {
   let newStr = "";
