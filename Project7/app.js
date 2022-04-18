@@ -11,7 +11,8 @@ function getDigits(characters) {
 }
 
 /*
-/O functie "getLetters" care primeste un sir de caractere si returneaza doar literele din sirul respectiv
+/
+O functie "getLetters" care primeste un sir de caractere si returneaza doar literele din sirul respectiv
 */
 function getLetters(characters) {
   let newStr = "";
