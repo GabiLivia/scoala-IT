@@ -1,0 +1,110 @@
+/*font-family: 'Roboto Mono', monospace;*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+.main img {
+  max-width: 100%;
+  max-height: 100vh;
+}
+.secondary {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, 12%);
+  z-index: 10;
+}
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.logo h3 {
+  font-size: 1.1rem;
+  font-family: "Roboto Mono", monospace;
+  color: rgb(38, 115, 154);
+  padding-left: 1rem;
+  animation: 17s steps(1700,end) 1s 1 normal both running animation1;
+  white-space: nowrap;
+  max-width: fit-content;
+  overflow: hidden;
+}
+
+@keyframes animation1{from{width:0}to{width:100%}}
+
+#toAnimate{
+  
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: "Roboto Mono", monospace;
+  color: rgb(38, 115, 154);
+  padding-left: 1rem;
+  animation-name: animation2;
+  animation-duration:1s;
+  animation-iteration-count: infinite;
+  animation-delay:17s ;
+  max-width: fit-content;
+  
+
+}
+
+@keyframes animation2{from{width:0}to{width:100%}}
+.input {
+  display: inline-block;
+  justify-content: baseline;
+  align-items: baseline;
+}
+.input .button {
+  height: 1.5rem;
+  max-width: 4rem;
+  font-size: 0.7rem;
+  font-family: "Roboto Mono", monospace;
+  background-color: rgba(23, 81, 143, 0.494);
+  color: rgb(255, 255, 255);
+  padding-top: 0;
+}
+.input label {
+  font-size: 0.8rem;
+  font-family: "Roboto Mono", monospace;
+  background-color: rgba(102, 102, 102, 0.861);
+  color: rgba(255, 255, 255);
+  font-weight: bolder;
+}
+.tabel {
+  z-index: 10;
+}
+
+.icon {
+  width: 1.1rem;
+  max-height: 1.1rem;
+}
+.del,
+.edit {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;!important
+}
+
+td {
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  font-size: 0.8rem;
+  font-family: "Roboto Mono", monospace;
+  color: rgb(34, 83, 162);
+  font-weight: bold;
+}
+#tabel {
+  z-index: 100;
+}

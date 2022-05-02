@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping list</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@200&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="title">
+      <h3>
+        shopping<br />
+        list
+      </h3>
+      <form
+        onsubmit="event.preventDefault();onFormSubmit();"
+        id="addForm"
+        class="form"
+      >
+        <input id="userInput" type="text" placeholder="Add your items!" />
+        <input type="submit" class="button" value="Submit" />
+      </form>
+    </div>
+    <div class="img">
+      <img src="images/notebook2.png" />
+      <div class="table">
+        <div class="btn-sort">
+          <button onClick="sortTableAsc()" id="sortAsc">
+            SortAsc<s>🟡</s>
+          </button>
+          <button onClick="sortTableDesc()" id="sortDesc">
+            SortDesc<s>🟣</s>
+          </button>
+        </div>
+        <table id="allItems">
+          <thead id="head">
+            <tr>
+              <th>Item Description</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

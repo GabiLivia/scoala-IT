@@ -1,0 +1,144 @@
+/*
+font-family: 'Anek Gujarati', sans-serif;
+font-family: 'Lobster', cursive;
+*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  letter-spacing: 0.3rem;
+}
+
+.title h3 {
+  padding-top: 5rem;
+}
+
+#addForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 3rem;
+}
+input {
+  align-items: center;
+  max-height: 3rem;
+  max-width: 9rem;
+  font-family: "Anek Gujarati", sans-serif;
+  font-size: 1rem;
+  margin-left: 2rem;
+}
+.button {
+  display: inline-block;
+  justify-content: center;
+  align-content: center;
+  font-size: 0.8rem;
+  color: #000;
+  border-color: rgba(255, 255, 255, 0.996);
+  padding: 0.2rem 0.7rem;
+  border-radius: 9%;
+  font-family: "Anek Gujarati", sans-serif;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  position: relative;
+}
+.img img {
+  max-height: 100vh;
+  z-index: 1;
+}
+.img .table {
+  z-index: 10;
+  max-height: fit-content;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.table #head {
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  background-color: yellow;
+  color: black;
+  padding: 1rem;
+  font-family: "Lobster", cursive;
+}
+.table #head th {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.table #body {
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  background-color: rgba(233, 233, 161, 0.996);
+  color: rgb(95, 90, 90);
+  padding: 1rem;
+  font-family: "Lobster", cursive;
+}
+.table thead th,
+.table thead tr,
+.table tbody tr,
+.table tbody td {
+  text-align: center;
+}
+
+.strike {
+  font-size: 0.8rem;
+  color: #000;
+  border-color: rgba(233, 233, 161, 0.996);
+  padding: 0.2rem 0.7rem;
+  border-radius: 9%;
+  font-family: "Anek Gujarati", sans-serif;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.strike:hover {
+  border-color: rgba(233, 233, 161, 0.996);
+  background: #d6bbe0;
+  box-shadow: 0 0 5px #d6bbe0, 0 0 25px #d6bbe0;
+}
+
+#sortAsc,
+#sortDesc {
+  border: none;
+  display: inline-block;
+  justify-content: center;
+  align-content: center;
+  font-family: "Anek Gujarati", sans-serif;
+  font-size: 1rem;
+  color: blueviolet;
+  font-weight: bold;
+  background-color: transparent;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+#sortAsc {
+  color: #d6d635;
+}
+s {
+  cursor: pointer;
+  text-decoration: none;
+  padding-left: 0.1rem;
+}
